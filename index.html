@@ -1,8 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Leonard Billy Ssekanjako — freelance developer crafting bespoke software solutions." />
+  <title>Leonard Billy Ssekanjako | Developer Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
 <body>
-  <header>
-    <nav>
-      <h1>Leonard Billy Ssekanjako</h1>
-      <ul>
+  <!-- Header / Navigation -->
+  <header class="header">
+    <nav class="nav container">
+      <h1 class="logo">Leonard Ssekanjako</h1>
+      <button class="nav-toggle" id="nav-toggle">☰</button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Work</a></li>
@@ -12,13 +24,61 @@
   </header>
 
   <main>
-    <section id="hero"></section>
-    <section id="about"></section>
-    <section id="services"></section>
-    <section id="portfolio"></section>
-    <section id="testimonials"></section>
-    <section id="contact"></section>
+    <!-- Hero -->
+    <section id="hero" class="hero container">
+      <h2>Hi, I'm Leonard Billy Ssekanjako</h2>
+      <p>I build bespoke software and digital solutions that solve real problems.</p>
+      <a href="#contact" class="btn">Let's Work Together</a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about container">
+      <h2>About Me</h2>
+      <p>I’m a developer with over 5 years of experience planning and building custom software projects for diverse clients.</p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services container">
+      <h2>What I Do</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>Building responsive, scalable web applications.</p>
+        </div>
+        <div class="card">
+          <h3>Automation</h3>
+          <p>Creating efficient workflow and process automation tools.</p>
+        </div>
+        <div class="card">
+          <h3>System Integration</h3>
+          <p>Connecting APIs and services to streamline your business.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio container">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+        <div class="card"><img src="images/project1.jpg" alt="Project 1" /><h3>Project Title</h3></div>
+        <div class="card"><img src="images/project2.jpg" alt="Project 2" /><h3>Project Title</h3></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact container">
+      <h2>Let's Connect</h2>
+      <p>Reach out for collaboration or inquiries:</p>
+      <a href="mailto:your.email@example.com" class="btn">Email Me</a>
+    </section>
   </main>
 
-  <footer></footer>
+  <footer class="footer">
+    <p>© 2025 Leonard Billy Ssekanjako. Built with HTML, CSS, and JS.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
+</html>
+
+
