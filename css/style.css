@@ -67,3 +67,19 @@ section p { max-width: 600px; margin: auto; text-align: center; }
 
 /* FOOTER */
 .footer { text-align: center; padding: 2rem 0; font-size: 0.9rem; color: var(--color-muted); }
+
+/* Mobile Menu Animation*/
+.nav-links {
+  flex-direction: column;
+  position: absolute;
+  right: 1rem;
+  top: 70px;
+  background: var(--color-surface);
+  padding: 1rem;
+  border-radius: var(--radius);
+  display: none;
+}
+.nav-links.open { display: flex; }
+@media (min-width: 768px) {
+  .nav-links { display: flex !important; position: static; flex-direction: row; background: none; }
+}
