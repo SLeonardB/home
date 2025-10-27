@@ -231,3 +231,52 @@ a:focus, button:focus {
   outline: 2px solid var(--color-accent);
   outline-offset: 3px;
 }
+
+/* ===== DARK MODE ===== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0f172a;
+    --color-surface: #1e293b;
+    --color-text: #f8fafc;
+    --color-muted: #94a3b8;
+    --color-border: #334155;
+    --color-accent: #3b82f6;
+  }
+
+  body {
+    background: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  .header {
+    background: var(--color-surface);
+    box-shadow: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .nav-links a {
+    color: var(--color-text);
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus {
+    color: var(--color-accent);
+  }
+
+  .card {
+    background: var(--color-surface);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn {
+    background: var(--color-accent);
+  }
+
+  .btn:hover {
+    background: #2563eb;
+  }
+
+  .footer {
+    color: var(--color-muted);
+  }
+}
