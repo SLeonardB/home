@@ -22,8 +22,8 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('section').forEach(s => observer.observe(s));
 
 // Provision for manual dark mode
-const toggle = document.getElementById('theme-toggle');
-toggle.addEventListener('click', () => {
+const toggleDark = document.getElementById('theme-toggle');
+toggleDark.addEventListener('click', () => {
   document.body.classList.toggle('manual-dark');
 });
 
