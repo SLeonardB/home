@@ -21,6 +21,16 @@
   --space-section: 6rem;
 }
 
+body.manual-dark {
+  --color-bg: #0f172a;
+  --color-surface: #1e293b;
+  --color-text: #f8fafc;
+  --color-muted: #94a3b8;
+  --color-border: #334155;
+  --color-accent: #3b82f6;
+}
+
+
 /* ===== RESET & BASE ===== */
 * {
   margin: 0;
