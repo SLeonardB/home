@@ -147,9 +147,16 @@ body {
   font-size: 1.1rem;
 }
 
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 .btn {
   background: var(--color-accent);
   color: #fff;
+  margin: auto 1rem;
   padding: 0.75rem 1.5rem;
   border-radius: var(--radius);
   text-decoration: none;
